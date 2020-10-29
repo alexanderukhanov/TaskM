@@ -4,6 +4,7 @@ const TEXT_LI = `LI`;
 const TEXT_CHECKED = `checked`;
 const LENGTH_OF_STRING = 3;
 const TEXT_ADD = `Add`;
+const ERROR_TEXT = `Enter minimum 3 symbols`;
 
 let wrapper = document.querySelector(`.wrapper`);
 let add = document.querySelector(`.add`);
@@ -16,7 +17,7 @@ wrapper.addEventListener(`click`, function (event) {
 
         if (taskText.value.trim().length < LENGTH_OF_STRING) {
             add.disabled = true;
-            p.innerHTML = `New task is required`;
+            p.innerHTML = ERROR_TEXT;
             p.style = `color:red`;
             taskText.style = `box-shadow: inset 0px 0px 0px 3px red`;
             return;
