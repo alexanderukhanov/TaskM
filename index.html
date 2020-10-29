@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>taskManager</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Task Manager</h1>
+      <div class="header__task">
+        <div class="header__text">
+          <input class="taskText" type="text" placeholder="New task" />
+          <p id="p"></p>
+        </div>
+        <div class="header__button">
+          <input type="button" class="add" value="Add" />
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <ul id="myList">
+        <li>Cook the dinner <button class="del"></button></li>
+        <li>Go to the gym <button class="del"></button></li>
+        <li>Meet Kevin <button class="del"></button></li>
+        <li>Pay bills <button class="del"></button></li>
+      </ul>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
